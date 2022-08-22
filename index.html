@@ -8,7 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <script src="app.js" type="module"></script>
+    <form id='userRegister' class="registerForm grid" action=".">
+        <h3 class="Title">Registrar nuevo usuario</h3>
+        
+        <ul class="registerForm__list">
+            <li class="registerForm__item">
+                <label class="registerForm__text" for="registerName">Name</label>
+                <input class="registerForm__input" type="text" id="registerName" placeholder="Enter your name" required>
+            </li>
+            
+            <li class="registerForm__item">
+                <label class="registerForm__text" for="registerAge">Age</label>
+                <input class="registerForm__input" type="number" id="registerAge" placeholder="Enter your age" required>
+            </li>
+        </ul>
+
+        <input class="registerForm__submit" type="submit" value="Register">
+    </form>
+
+    <div class="user-box grid">
+        <h2>Usuarios registrados</h2>
+
+        <ul class="user__list">
+            <!-- <li class="user__item-0">
+                <span class="user__text">Id: 1</span>
+                <span class="user__text">Name: User prueba</span>
+                <span class="user__text">Age: 10</span>
+            </li> -->
+        </ul>
+    </div>
+
+    <script type="module" src="app.js"></script>
 </body>
 </html>
